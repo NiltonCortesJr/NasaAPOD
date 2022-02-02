@@ -1,71 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <main>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Nasa - Imagem do dia</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasa - Imagem do dia</title>
+            <link rel="stylesheet" href="./css/index.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script defer src="./javaScript/index.js"> </script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+                crossorigin="anonymous">
+            </script>
+        </head>
 
-    <link rel="stylesheet" href="./css/index.css">
+        <body>
+            <header>
+                <div class="titulo">
+                    <h1> A Nasa dedica uma imagem para cada dia! Você sabia?</h1>
+                </div>
+            </header>
 
-</head>
+            <div class="dataEscolhida">
+                <div class="escolha">
+                    <h2>Escolha uma data: </h2>
+                    <input id="data" type="date" min="1995-06-20"></input>
 
-<body>
-    <header>
-        <div class="titulo">
-            <h1> A Nasa dedica uma imagem para cada dia! Você sabia?</h1>
-        </div>
+                    <div class="botaoPesquisar">
+                        <button id="botao">Pesquisar</button>
+                    </div>
+                </div>
 
-    </header>
-
-    <div class="dataEscolhida">
-        <div class="escolha">
-
-            <h2>Escolha uma data: </h2>
-            <input id="data" type="date" min="1995-06-20"></input>
-
-            <div class="botaoPesquisar">
-                <button id="botao">Pesquisar</button>
+                <div class="subtitulo">
+                    <h2>É isso mesmo!!</h2>
+                    <h2> A partir do dia 20 de junho de 1995 a Nasa escolhe uma foto, ou vídeo, como imagem do dia! E o melhor de tudo que você pode escolher uma data, e por um toque de mágica a imagem aparece.</h2>
+                </div>
             </div>
 
-        </div>
-        <div class="subtitulo">
-            <h2>É isso mesmo!!</h2>
-            <h2> A partir do dia 20 de junho de 1995 a Nasa escolhe uma foto, ou vídeo, como imagem do dia! E o melhor
-                de tudo que você pode escolher uma data, e por um toque de mágica a imagem aparece.</h2>
-        </div>
 
-    </div>
+            <div id="geral">
+                <img id="imagemDoDia">
+                <iframe id="videoDoDia"></iframe>
 
+                <div class="descricaoDaImagem">
+                    <h3>Descrição da imagem:</h3>
+                    <p id="sobreAImagem"></p>
+                </div>
+            </div>
+        </body>
 
-    <div id="geral">
-        <!-- <img id="imagem-dia"> -->
-        <img id="imagemDoDia">
-        <!-- <iframe id="video-dia"></iframe> -->
-        <iframe id="videoDoDia"></iframe>
-
-
-        <!-- <div class="descricao"> -->
-        <div class="descricaoDaImagem">
-            <h3>Descrição da imagem:</h3>
-            <!-- <p id="sobre-img"></p> -->
-            <p id="sobreAImagem"></p>
-        </div>
-
-
-    </div>
-
-
-
-    <script defer src="./javaScript/index.js"> </script>
-</body>
-
-<footer>
-    &copy; 2022 - Nilton Jr - Site desenvolvido para fins educativos.
-</footer>
-
+        <footer>
+            &copy; 2022 - Nilton Jr - Site desenvolvido para fins educativos.
+        </footer>
+    </main>
 </html>
