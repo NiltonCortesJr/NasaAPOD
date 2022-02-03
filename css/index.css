@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    margin:0;
+    margin: 0;
     font-size: 1.7em;
     display: flex;
     justify-content: right;
@@ -33,7 +33,7 @@ h2 {
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
-h3 { 
+h3 {
     margin: 0;
     font-size: 1.5em;
     display: flex;
@@ -52,7 +52,7 @@ header {
 .titulo {
     width: 50%;
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: left;
     padding: 20px 0 20px 20px;
 }
@@ -65,7 +65,7 @@ header {
     justify-content: right;
 }
 
-.escolha{
+.escolha {
     margin: 5em 0 0 10em;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ header {
     border-radius: 15px;
 }
 
-#data{
+#data {
     margin-top: 15px;
 }
 
@@ -164,38 +164,98 @@ footer {
 
 }
 
+/* Estilizando o código responsivo */
 @media only screen and (max-width: 800px) {
     body {
         display: flex;
         flex-direction: column;
         align-content: center;
-        background-attachment: fixed;
-        background-repeat: repeat-y;
+        /* background-attachment: fixed; */
+        /* background-repeat: repeat-y; */
     }
 
     h1 {
         font-size: 2em;
     }
 
-    p {
-        font-size: 1em;
+    h2, h3 {
+        font-size: 1.3em;
     }
 
-    #container {
+    .escolha {
+        margin: auto;
+    }
+
+    #geral {
+        padding: 40px 10px 10px 10px;
+    }
+
+    #videoDoDia, #imagemDoDia {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
         display: flex;
+        flex-direction: column;
         align-content: center;
     }
 
-    #imagem-dia {
-        height: 200px;
-        min-width: 280px;
-        margin: auto;
+    header {
+        justify-content: center;
     }
 
-    #videoDoDia {
-        height: 200px;
-        min-width: 280px;
-        margin: auto;
+    .titulo {
+        width: auto;
+        text-align: center;
+        padding: 0 0 10px 0;
     }
 
+    .subtitulo {
+        width: auto;
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .dataEscolhida {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .escolha {
+        margin-top: 1em;
+    }
+
+    input {
+        border-radius: 5px;
+        width: 150px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 1em;
+
+    }
+
+    #geral {
+        flex-direction: column;
+        margin-top: 1em;
+        padding: 0;
+    }
+
+    .descricaoDaImagem {
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    #videoDoDia, #imagemDoDia {
+        width: 290px;
+        height: 140px;
+    }
 }
